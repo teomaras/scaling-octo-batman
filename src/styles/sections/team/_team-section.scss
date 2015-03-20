@@ -1,0 +1,113 @@
+.team-section {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 100px 20px;
+
+  h1 {
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+}
+
+.team-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+
+  li {
+    display: inline-block;
+    margin: 10px 10px 30px;
+  }
+
+  .team-member {
+    transition: filter 0.5s ease;
+    transition: background-size 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    height: 145px;
+    width: 200px;
+    background-position: 50%;
+    background-size: 105%;
+    overflow: hidden;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .social-wrapper {
+    transition: bottom .5s ease;
+    position: absolute;
+    bottom: -50px;
+    left: 86px;
+    width: 188px;
+    margin-left: -80px;
+
+    i {
+      font-size: 22px;
+      margin: 0 3px;
+      color: #fff;
+      background-color: $primary-color;
+      padding: 9px;
+    }
+
+    .fa-envelope:hover {
+      background-color: $primary-dark;
+    }
+
+    .fa-github:hover {
+      background-color: #323232; // linkedin blue
+    }
+
+    .fa-linkedin:hover {
+      background-color: #3b5998; // linkedin blue
+    }
+
+    .fa-twitter:hover {
+      background-color: #5ea9dd; // twitter blue
+    }
+  }
+
+  .team-member:hover {
+    transition: background-size 0.2s ease;
+    transition: filter 0.5s ease;
+    background-size: 112%;
+    filter: grayscale(1%);
+    -webkit-filter: grayscale(1%);
+    filter: grayscale(1%);
+
+    .social-wrapper {
+      transition: bottom .5s ease;
+      bottom: 10px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .team01 {
+    background-image: url('../assets/team/chris.jpg');
+  }
+  .team02 {
+    background-image: url('../assets/team/steve.jpg');
+  }
+  .team03 {
+    background-image: url('../assets/team/ivan.jpg');
+  }
+  .team04 {
+    background-image: url('../assets/team/petar.jpg');
+  }
+  .team05 {
+    background-image: url('../assets/team/niksa.jpg');
+  }
+}
