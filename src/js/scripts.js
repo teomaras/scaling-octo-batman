@@ -3,7 +3,7 @@ new WOW().init();
 function ScrollToLink(link){
   var $href = $(link).attr('href');
   var $anchor = $($href).offset();
-  $('body').animate({ scrollTop: $anchor.top });
+  $('html, body').animate({ scrollTop: $anchor.top });
   return false;
 }
 
@@ -20,7 +20,7 @@ $('footer').find('a').click(function(){
 });
 
 $('nav h1').find('a').click(function(){
-    $('body').animate({ scrollTop: 0 });
+    $('html, body').animate({ scrollTop: 0 });
     return false;
 });
 
