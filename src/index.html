@@ -39,6 +39,7 @@
     <h1 class="wow lightSpeedIn">We transform your ideas into useful products by helping you achieve</br>
       the perfect balance of <span>innovation</span>, <span>elegance</span>, and <span>usability</span></h1>
     <a href="#team"><button class="animated flipInY">learn more</button></a>
+    <button class="toggle-back-fixed">toggle</button>
   </div>
 </header>
 <section class="team-section" id="team">
@@ -186,22 +187,32 @@ target="hidden_iframe" onsubmit="submitted=true;" name="contactForm">
     top: 0;
   }
 
+  .attach {
+    background-attachment: fixed;
+  }
+
   footer {
     z-index: 1;
   }
 
   #cinemagraph {
-    width: 100%;
+    /*width: 100%;
     background-attachment: fixed;
     background-image: url('assets/header2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    position: relative;
+    position: relative;*/
+
+    /*position: absolute;*/
+    /*position: relative;*/
+    /*top: 0;
+    z-index: 1;*/
   }
 </style>
 
-<!-- <div class="cinemagraph"></div> -->
+
+<div class="cinemagraph"></div>
 <!-- build:js -->
 <script src="js/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
@@ -217,6 +228,14 @@ target="hidden_iframe" onsubmit="submitted=true;" name="contactForm">
   ga('create', 'UA-60608771-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>
+$(window).load(function(){
+  $('.toggle-back-fixed').click(function(){
+    $('.cinemagraph').toggleClass('attach');
+  });
+});
 </script>
 </body>
 
