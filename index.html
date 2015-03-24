@@ -21,6 +21,7 @@
 </head>
 
 <body id="home">
+<div id="cinemagraph">
 <div id="preload-wrapper">
   <i class="fa fa-spin fa-spinner"></i>
 </div>
@@ -178,6 +179,7 @@ target="hidden_iframe" onsubmit="submitted=true;" name="contactForm">
   </ul>
   <p>&copy; 2015 East Coast Product</p>
 </footer>
+</div>
 
 <style>
   .cinemagraph {
@@ -187,9 +189,18 @@ target="hidden_iframe" onsubmit="submitted=true;" name="contactForm">
   footer {
     z-index: 1;
   }
+
+  #cinemagraph {
+    background-attachment: fixed;
+    background-image: url('assets/header2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    /*position: fixed;*/
+  }
 </style>
 
-<div class="cinemagraph"></div>
+<!-- <div class="cinemagraph"></div> -->
 <!-- build:js -->
 <script src="js/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>

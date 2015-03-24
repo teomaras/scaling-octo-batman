@@ -63,7 +63,7 @@
 
   $(window).load(function(){
     $("#preload-wrapper").css("display", "none");
-    loadPictures(headerImage);
+    // loadPictures(headerImage);
     loadPictures(listOfImages);
   });
 })();
